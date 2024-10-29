@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La proprietà POSITION in CSS</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>POSITION: STICKY</h2>
+        <p>
+          Un elemento con "position: sticky" è posizionato nella pagina in base
+          al livello di scroll del browser. Possiede una posizione iniziale, che
+          seguirà il normale flow degli elementi e il livello di scroll, ma al
+          raggiungimento un punto di soglia (threshold) comincerà a comportarsi
+          come un position fixed (ovvero si "ancorerà" al viewport). Possiamo
+          dire che questo valore di position è una via di mezzo tra "relative" e
+          "fixed", perchè l'elemento seguirà il normale flow della pagina fino
+          al raggiungimento della soglia dopo la quale comincerà ad ancorarsi al
+          viewport (diventando indipendente dallo scroll, gli elementi della
+          pagina cominceranno a scorrergli "dietro")
+        </p>
+        <p class="sticky">Questo p è posizionato con "position: sticky"</p>
+      </section>
+    </main>
+  </body>
+</html>
