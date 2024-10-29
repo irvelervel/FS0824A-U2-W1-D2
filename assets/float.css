@@ -1,0 +1,55 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 1em;
+}
+
+header {
+  background-color: navy;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+header nav {
+  background-color: lightblue;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+main {
+  border: 1px solid black;
+}
+
+main aside#left {
+  /* questo è il contenitore dell'immagine del gatto */
+  /* allineiamolo a sx */
+  float: left;
+  /* se volessimo lasciare un'intercapedine tra l'immagine e il testo della section, non serve inserire un padding alla section ma conviene applicare
+  un margin direttamente all'aside */
+  margin-right: 1rem;
+}
+
+main aside#right {
+  /* questo è il contenitore dell'immagine del gatto */
+  /* allineiamolo a sx */
+  float: right;
+  /* se volessimo lasciare un'intercapedine tra l'immagine e il testo della section, non serve inserire un padding alla section ma conviene applicare
+  un margin direttamente all'aside */
+  margin-left: 1rem;
+}
+
+footer {
+  /* resettiamo da questo punto in poi il normale flow della pagina */
+  clear: left;
+  /* left in quanto il float precedente era stato applicato a left */
+  /* "annulliamo" l'effetto del float */
+}

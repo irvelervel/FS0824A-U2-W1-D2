@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float & Clear</title>
+    <link rel="stylesheet" href="./assets/float.css" />
+  </head>
+  <body>
+    <!-- Float è una proprietà CSS che serve ad "affiancare" dei contenuti.
+     Settando float ad un valore di left o right "spostiamo" un elemento nel 
+     lato della pagina corrispondente; il contenuto SUCCESSIVO, senza nessuna
+     proprietà CSS, confluirà naturalmente verso il lato opposto ("libero"). -->
+    <!-- Oggi float è ancora utilizzato ma, con l'evoluzione portata da flexbox,
+      non è più una tecnica "fondamentale". -->
+    <header>
+      <h1>EPICODE</h1>
+      <nav>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>REACT</li>
+          <li>ANGULAR</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside id="left">
+        <img src="https://placecats.com/250/250" alt="cat picture" />
+      </aside>
+
+      <aside id="right">
+        <img src="https://placecats.com/250/250" alt="cat picture" />
+      </aside>
+
+      <!-- utilizzando float è NECESSARIO inserire in HTML innanzitutto
+       gli elemento flottanti, e solamente DOPO gli elementi che devono
+       andare a riempire lo spazio "libero" -->
+
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque,
+          itaque rerum illo in iure ullam tenetur ea nemo assumenda doloribus
+          nostrum quo temporibus iste expedita illum dolore similique minima.
+        </p>
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque,
+          itaque rerum illo in iure ullam tenetur ea nemo assumenda doloribus
+          nostrum quo temporibus iste expedita illum dolore similique minima.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque,
+          itaque rerum illo in iure ullam tenetur ea nemo assumenda doloribus
+          nostrum quo temporibus iste expedita illum dolore similique minima.
+        </p> -->
+      </section>
+    </main>
+    <footer><p>EPICODE - 2024</p></footer>
+  </body>
+</html>
