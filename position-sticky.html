@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La proprietà POSITION in CSS</title>
+    <style>
+      .sticky {
+        /* rendiamo il nostro elemento "appiccicoso" */
+        position: sticky;
+        border: 2px solid red;
+        padding: 1rem 0;
+        /* questo elemento si comporterà come un "position: relative", fino al raggiungimento del suo punto di soglia, definito tramite T/P/L/R */
+        top: 0; /* sto indicando come punto di soglia la CIMA della pagina */
+        /* una volta raggiunta, l'elemento smetterà di seguire lo scroll e si "appiccicherà" alla cima della pagina come se fosse un "position: fixed" */
+        background-color: white; /* forziamo un background bianco perchè altrimenti avremmo un visible overlap dei testi con gli elementi successivi */
+      }
+    </style>
   </head>
   <body>
     <main>
       <section>
         <h2>POSITION: STICKY</h2>
+        <p class="sticky">Questo p è posizionato con "position: sticky"</p>
         <p>
           Un elemento con "position: sticky" è posizionato nella pagina in base
           al livello di scroll del browser. Possiede una posizione iniziale, che
@@ -21,7 +34,161 @@
           viewport (diventando indipendente dallo scroll, gli elementi della
           pagina cominceranno a scorrergli "dietro")
         </p>
-        <p class="sticky">Questo p è posizionato con "position: sticky"</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dolore
+          aut ducimus quisquam fuga itaque optio voluptatibus labore incidunt id
+          illum inventore. Alias doloribus et vitae animi voluptatum quis rerum!
+        </p>
       </section>
     </main>
   </body>

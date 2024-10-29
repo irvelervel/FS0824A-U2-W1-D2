@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La proprietà Z-INDEX</title>
+    <style>
+      .box {
+        position: relative;
+        border: 2px solid black;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+      }
+
+      .box div {
+        /* i tre div */
+        width: 150px;
+        height: 150px;
+        position: absolute;
+      }
+
+      #red {
+        background-color: red;
+      }
+
+      #blue {
+        background-color: blue;
+        left: 35px;
+        top: 35px;
+      }
+
+      #green {
+        background-color: green;
+        left: 75px;
+        top: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Z-INDEX</h2>
+      <p>
+        z-index è una proprietà che determina la priorità di visualizzazione di
+        elementi sovrapposti. In termini "tecnici" va a determinale "l'ordine di
+        rendering" degli elementi da parte del browser. Per poter utilizzare lo
+        z-index è necessario che l'elemento sia "POSIZIONATO" (ovvero che abbia
+        un valore di "position" diverso da static.)
+      </p>
+      <article class="box">
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+      </article>
+    </main>
+  </body>
+</html>
