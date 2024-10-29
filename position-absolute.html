@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La proprietà POSITION in CSS</title>
+    <style>
+      .absolute {
+        position: absolute;
+        border: 2px solid red;
+        /* anche con position: absolute è possibile utilizzare T/B/L/R.
+        però il loro significato è diverso: in "position: absolute" lo ancorano
+        a un riferimento preciso nella pagina: questo riferimento, di default, è 
+        la pagina stessa. */
+        /* applicando ad esempio bottom: 0 e right: 0, lo "appiccichiamo" all'angolo inferiore destro della pagina. */
+        bottom: 0;
+        right: 0;
+      }
+
+      .box {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+      }
+
+      .first {
+        border: 2px solid blue;
+        left: 0;
+      }
+
+      .second {
+        border: 2px solid orange;
+        right: 0;
+        bottom: 0;
+      }
+
+      .relative {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>POSITION: ABSOLUTE</h2>
+        <p>
+          Un elemento con "position: absolute" viene immediatamente RIMOSSO dal
+          flow della pagina .
+        </p>
+        <p class="absolute">Questo p è posizionato con "position: absolute"</p>
+        <p>Questo è posizionato con "position: static"</p>
+      </section>
+      <section class="relative">
+        <div class="box first">position: absolute</div>
+        <div class="box second">position: absolute</div>
+      </section>
+      <!-- REGOLA GENERALE DI POSITION: ABSOLUTE -->
+      <!-- un elemento dotato di position: absolute si posizionerà in modo ASSOLUTO prendendo come riferimento il più prossimo parent dotato di position: relative(in realtà basta che sia dotato di un qualsiasi valore di position che non sia "static"); qualora non trovasse un parent dotato di position: relative, prenderà come riferimento l'intera pagina -->
+    </main>
+  </body>
+</html>
